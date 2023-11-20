@@ -1,0 +1,44 @@
+import React from 'react';
+
+const MyComponent = () => {
+  const numberList = [1, 2, 3, 4, 5];
+
+  return (
+    <div>
+      <h1>Number List</h1>
+      <ul>
+        {numberList.map((number) => (
+          <li key={number}>{number}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default MyComponent;
+
+
+
+
+ITEMLIST
+import React from 'react';
+
+const ItemList = ({ items }) => {
+  return (
+    <div>
+      <h2>List of Items</h2>
+      <ul>
+        {items.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default ItemList;
+
+
+
+
+
